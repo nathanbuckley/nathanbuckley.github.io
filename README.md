@@ -1,11 +1,7 @@
 # nathanbuckley.github.io
 
-> Gallery and Project showcase by Nathan Buckley.
+> Gallery and Project showcase.
 
-Testing/Running locally
-------------------------
-
-`...coming soon`
 
 Pallet
 ------
@@ -26,7 +22,6 @@ Libraries & Tools
     - [uglify-js](https://github.com/mishoo/UglifyJS2)
 
 Thanks
---------
-:octocat: GitHub and the team behind [GitHub Pages](https://pages.github.com/)
+-------
 
 :metal: @robinparisi creator of [tingle.js](https://github.com/robinparisi/tingle)
