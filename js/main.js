@@ -5,15 +5,6 @@ var gallery = document.getElementById("galNavbtn");
 var projects = document.getElementById("projNavbtn");
 var contact = document.getElementById("contNavbtn");
 
-essay.onclick = function(){
-    var essdiv = document.getElementById("ess");
-    var essdivposition = essdiv.offsetTop;
-    window.scrollTo({
-        top: essdivposition,
-        behavior: "smooth"
-    });
-}
-
 gallery.onclick = function(){
     var galdiv = document.getElementById("gal");
     var galdivposition = galdiv.offsetTop;
@@ -21,7 +12,7 @@ gallery.onclick = function(){
         top: galdivposition,
         behavior: "smooth"
     });
-}
+};
 
 projects.onclick = function(){
     var projdiv = document.getElementById("proj");
@@ -30,7 +21,7 @@ projects.onclick = function(){
         top: projdivposition,
         behavior: "smooth"
     });
-}
+};
 
 contact.onclick = function(){
     var contdiv = document.getElementById("cont");
@@ -39,7 +30,7 @@ contact.onclick = function(){
         top: contdivposition,
         behavior: "smooth"
     });
-}
+};
 
 // ******* Scroll to top button ********
 
@@ -50,7 +41,7 @@ window.onscroll = function(){
     } else {
         document.getElementById("topbtn").style.display = "none";
     }
-}
+};
 
 //Scroll to top onclick function
 function scrolltotop() {
@@ -82,7 +73,7 @@ function randomBtnChoice(){
 // ******** Temp Secret Modal ********
 
 var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".modalTrigger");
+// var trigger = document.querySelector(".modalTrigger");
 var closeButton = document.querySelector(".close-button");
 
 function toggleModal(){
@@ -95,6 +86,6 @@ function windowOnClick(event){
     }
 }
 
-trigger.addEventListener("click", toggleModal);
+// trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);

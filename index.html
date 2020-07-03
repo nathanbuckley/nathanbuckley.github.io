@@ -27,8 +27,7 @@
         <!--**************** NAV ****************-->
 
         <div id="navlinks">
-            <button class="isobtn" id="essayNavbtn">Essays</button>
-            <button class="isobtn" id="galNavbtn">Gallery</button>
+            <button class="isobtn" id="galNavbtn">Builds</button>
             <button class="isobtn" id="projNavbtn">Projects</button>
             <button class="isobtn" id="contNavbtn">Contact</button>
         </div>
@@ -42,37 +41,26 @@
         <div class="headlinks">
             <a href="https://github.com/nathanbuckley" ><i class="fab fa-github fa-3x"></i></a>
             <a href="https://www.youtube.com/channel/UCLTJ3gfX1f5yHCtVuEXbVIQ/videos" ><i class="fab fa-youtube fa-3x"></i></a>
-            <a href="https://www.instagram.com/nathanbuckley/" ><i class="fab fa-instagram fa-3x"></i></a>
         </div>
 
-        <!-- ************* ESSAYS ************** -->
-
-        <div class="essay" id="ess">
-
-            <div class="titles">
-                <h2>Essays</h2>
-            </div>
-        
-            <!-- The Beginning -->
-            <div class="essayblock">
-                <button class="essayblockimg" id="galtempbtn" onclick="openbeginningmodal()">
-                    <img src="http://via.placeholder.com/250x150">
-                </button>
-                <h4 class="essaytitles">The Beginning</h4>
-                <p class="essayblurb">
-                    Tiramisu pie I love oat cake ice cream. Halvah lemon drops pudding jelly-o chocolate 
-                    I love pudding. Danish dessert chupa chups toffee topping apple pie. 
-                </p>
-            </div>
-        
-        </div>
-
-        <!-- ************* GALLERY ************** -->
+        <!-- ************* Build Gallery ************** -->
 
         <div class="gallery" id="gal">
 
                 <div class="titles">
-                    <h2>Gallery</h2>
+                    <h2>Build Gallery</h2>
+                </div>
+
+                <!-- Black Milk -->
+                <div class="galblock">
+                    <button class="galblockimg" onclick="openmintcvmodal()">
+                        <img src="http://via.placeholder.com/340x230">
+                    </button>
+                    <h4 class="galblocktitle">My First keeb build</h4>
+                    <p class="galblocksub">A Tiny Macropad pad collection based of the 2% milk PCB.</p>
+                    <p class="galblockblurb">
+                        ......  
+                    </p>
                 </div>
 
                 <!-- Mint CV Template -->
@@ -88,18 +76,6 @@
                     </p>
                 </div>
 
-                <!-- Biz card Template -->
-                <div class="galblock">
-                    <button class="galblockimg" onclick="openbizcardmodal()">
-                        <img src="http://via.placeholder.com/340x230">
-                    </button>
-                    <h4 class="galblocktitle">Triangle Buisness</h4>
-                    <p class="galblocksub">An Elite buisness card Design</p>
-                    <p class="galblockblurb">
-                        coming soon  
-                    </p>
-                </div>
-
             </div>
 
         <!-- ************* PROJECTS ************** -->
@@ -107,7 +83,7 @@
         <div class="work" id="proj">
 
             <div class="titles">
-                <h2>Projects</h2>
+                <h2>Projects and script</h2>
             </div>
 
         <!-- Bunny Script collection -->
@@ -123,11 +99,11 @@
             </div>
         </div>
 
-            <!-- l337 L4mp -->
+            <!-- My Custom QMK Maps -->
             <div class="workblock">
-                <h4 class="worktitle">l337 L4mp</h4>
+                <h4 class="worktitle">QMK Keymaps</h4>
                 <p>
-                    (WORK IN PROGRESS)<br>
+                   A collection of quirky custom QMK keymaps for diffrent builds createrd by myself.
                 </p>
                 <div class="worklinks">
                     <a href="https://github.com/nathanbuckley/1337_l4mp"><i class="fab fa-github fa-2x"></i></a>
@@ -143,12 +119,12 @@
                     any snippits you like. ;)
                 </p>
                 <div class="worklinks">
-                    <a href="https://github.com/nathanbuckley/nodePktAnalyzer"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://github.com/nathanbuckley/nathanbuckley.github.io"><i class="fab fa-github fa-2x"></i></a>
                     <a class=""><i class="fab fa-rebel fa-2x"></i></a>
                 </div>
                     
             </div>
-        </div>
+        </div>    
 
         <!-- ************ CONTACT FORM ************ -->
 
@@ -174,8 +150,6 @@
         <script src="js/main.min.js"></script>
         <script src="js/lib/tingle.min.js"></script>
 
-        <!-- Essay Modals -->
-        <script src="js/essaymodals/thebeginning.js"></script>
 
         <!-- Gallery Modals -->
         <script src="js/gallmodals/cv3.js"></script>
