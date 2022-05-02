@@ -5,14 +5,8 @@
   "main": "",
   "scripts": {
     "test": "",
-    "info": "echo 'INFO:\n Repo: https://github.com/nathanbuckley/nathanbuckley.github.io#readme\n author: nathanbuckley\n license: ISC'",
-    "initialbuild": " ",
-    "lintalljs": "echo '=====> linting all the JS <======\n' && jshint js/*.js",
-    "minmaincss": "echo '=====> minify main.css <======\n' && cleancss css/main.css -o css/main.min.css",
-    "minmodalcss": "echo '=====> minify modal.css <======\n'&& cleancss css/modal.css -o css/modal.min.css",
-    "minmainjs": "echo '=====> minify main.js <======\n' && uglifyjs js/main.js -o js/main.min.js --verbose --timings",
-    "build": "echo '~~~ =====> Running Build Sequance <====== ~~~\n' && npm run minmaincss -s && npm run minmodalcss -s && npm run minmainjs -s",
-    "open": "echo '=====> build, Start HTTP server & Opening in Browser <======\n' && npm run build -s && http-server ./ -p 1337 -o"
+    "build": "",
+    "dev": "http-server ./ -p 1337 -o"
   },
   "repository": {
     "type": "git",
@@ -29,12 +23,6 @@
   },
   "homepage": "https://github.com/nathanbuckley/nathanbuckley.github.io#readme",
   "devDependencies": {
-    "http-server": "^0.12.3",
-    "clean-css-cli": "^4.1.11",
-    "jshint": "^2.11.1",
-    "uglify-js": "^3.3.13"
-  },
-  "dependencies": {
-    "tingle.js": "^0.13.2"
+    "http-server": "^14.1.0"
   }
 }
