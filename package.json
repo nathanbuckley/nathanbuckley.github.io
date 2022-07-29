@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "build": "",
-    "dev": "http-server ./ -p 1337 -o"
+    "dev": "sass --watch src/css/main.scss dist/main.css"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,6 @@
   "homepage": "https://github.com/nathanbuckley/nathanbuckley.github.io#readme",
   "devDependencies": {
     "http-server": "^14.1.0",
-    "tailwindcss": "^3.1.6"
+    "sass": "^1.54.0"
   }
 }
