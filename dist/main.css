@@ -1,5 +1,33 @@
+body {
+  margin: 0%;
+  display: grid;
+  grid-template-rows: 60px auto 100px;
+  grid-template-columns: 5% auto 5%;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
 .main-nav {
+  grid-row: 1;
+  grid-column: 1/span 3;
   background-color: #6e7598;
+}
+
+.page {
+  height: 100vh;
+  grid-row: 2;
+  grid-column: 2/span 1;
+  background-image: url("../img/Self_Blank_V2_Glitch_Animation_.gif");
+  background-repeat: no-repeat;
+  background-color: #d3dce6;
+  background-position: bottom center;
+  background-size: 70%;
+}
+
+.footer {
+  grid-row: 3;
+  grid-column: 1/span 3;
+  background-color: #414767;
 }
 
 /*# sourceMappingURL=main.css.map */
