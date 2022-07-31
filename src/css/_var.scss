@@ -1,6 +1,7 @@
 
 // FONTS
-$main-font: Helvetica, sans-serif;
+$main-font: 'Roboto Condensed', sans-serif;
+$alt-font: 'Roboto', sans-serif;
 
 // MAIN COLOUR PALLET
 $term-green: #A4F644;
@@ -12,3 +13,12 @@ $bluegrey-light: #6e7598;
 $bluegrey-dark: #414767;
 
 // DARK MODE PALLET
+
+// SCREEN SIZES
+
+$sm: '640px';
+$md: '768px';
+$lg: '1024px';
+$xl: '1280px';
+$xxl: '1536px';
+

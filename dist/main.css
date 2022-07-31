@@ -5,12 +5,25 @@ body {
   grid-template-columns: 5% auto 5%;
   justify-items: stretch;
   align-items: stretch;
+  background-color: #d3dce6;
 }
 
 .main-nav {
   grid-row: 1;
   grid-column: 1/span 3;
   background-color: #6e7598;
+}
+.main-nav .nav-link-block {
+  font-family: "Roboto Condensed", sans-serif;
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-nav .nav-link-block .nav-item {
+  text-decoration: none;
+  color: #d3dce6;
+  margin-right: 2.5em;
 }
 
 .page {

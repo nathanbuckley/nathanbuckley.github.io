@@ -7,12 +7,27 @@ body{
     grid-template-columns: 5% auto 5%;
     justify-items: stretch;
     align-items: stretch;
+    background-color: var.$gray-light;
 }
 
 .main-nav{
     grid-row: 1;
     grid-column: 1 / span 3;
     background-color: var.$bluegrey-light;
+
+    .nav-link-block{
+        font-family: var.$main-font;
+        float: right;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .nav-item{
+            text-decoration: none;
+            color: var.$gray-light;
+            margin-right: 2.5em;
+        }
+    }
 }
 
 .page{
