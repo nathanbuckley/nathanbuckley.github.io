@@ -3,7 +3,7 @@
 body{
     margin: 0%;
     display: grid;
-    grid-template-rows: 60px auto 100px;
+    grid-template-rows: 80px auto 100px;
     grid-template-columns: 5% auto 5%;
     justify-items: stretch;
     align-items: stretch;
@@ -13,19 +13,21 @@ body{
 .main-nav{
     grid-row: 1;
     grid-column: 1 / span 3;
-    background-color: var.$bluegrey-light;
+    background-color: var.$gray-light;
 
     .nav-link-block{
         font-family: var.$main-font;
+        font-weight: 900;
+        font-size: 1.3em;
         float: right;
         height: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
 
         .nav-item{
             text-decoration: none;
-            color: var.$gray-light;
-            margin-right: 2.5em;
+            color: var.$bluegrey-light;
+            margin-right: 3em;
         }
     }
 }
@@ -45,5 +47,13 @@ body{
     grid-row: 3;
     grid-column: 1 / span 3;
     background-color: var.$bluegrey-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .foot-link-block{
+        display: flex;
+        align-items: center;
+    }
 }
 
