@@ -11,7 +11,7 @@ body {
 .main-nav {
   grid-row: 1;
   grid-column: 1/span 3;
-  background-color: #d3dce6;
+  background-color: transparent;
 }
 .main-nav .nav-link-block {
   font-family: "Roboto Condensed", sans-serif;
@@ -39,6 +39,11 @@ body {
   background-size: 70%;
 }
 
+@media screen and (min-width: 1600px) {
+  .page {
+    background-size: 40%;
+  }
+}
 .footer {
   grid-row: 3;
   grid-column: 1/span 3;
@@ -50,6 +55,13 @@ body {
 .footer .foot-link-block {
   display: flex;
   align-items: center;
+}
+.footer .foot-link-block .footer-item {
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 1em 0 1em;
+  color: #d3dce6;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
