@@ -1,4 +1,5 @@
-@use 'var';
+@use 'parts/var';
+@use 'parts/glitch-animation';
 
 body{
     margin: 0%;
@@ -28,6 +29,9 @@ body{
             text-decoration: none;
             color: var.$bluegrey-light;
             margin-right: 3em;
+            &:hover{
+                @include glitch-animation.glitch;
+            }
         }
     }
 }
