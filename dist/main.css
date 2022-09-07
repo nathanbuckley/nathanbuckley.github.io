@@ -31,6 +31,53 @@
     transform: translate(-22px, 5px) skew(21deg);
   }
 }
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.close-btn {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background-color: darkgray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 body {
   height: 100vh;
   margin: 0%;
@@ -51,7 +98,7 @@ body {
 .main-nav .nav-link-block {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 1.6em;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -77,7 +124,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
-.main-nav .nav-link-block .nav-item:hover:after {
+.main-nav .nav-link-block .nav-item:hover::before {
   color: #F54D9C;
   animation: glitchBotom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);

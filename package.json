@@ -4,8 +4,7 @@
   "description": "github pages page",
   "main": "",
   "scripts": {
-    "test": "",
-    "build": "",
+    "minjs": "uglifyjs -c src/js/main.js -o dist/main.min.js --verbose",
     "dev": "sass --watch src/css/main.scss dist/main.css"
   },
   "repository": {
@@ -24,6 +23,7 @@
   "homepage": "https://github.com/nathanbuckley/nathanbuckley.github.io#readme",
   "devDependencies": {
     "http-server": "^14.1.0",
-    "sass": "^1.54.0"
+    "sass": "^1.54.0",
+    "uglify-js": "^3.17.0"
   }
 }
