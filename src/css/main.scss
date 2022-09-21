@@ -48,12 +48,13 @@ body{
     background-color: var.$gray-light;
     background-position: bottom center;
     background-size: 70%;
+    height: 100vh;
 }
-@media  screen and (min-width: 1600px){
-    .page{
-        background-size: 40%;
-    }
-}
+//@media  screen and (min-width: 1600px){
+//    .page{
+//        background-size: 40%;
+//    }
+//}
 
 .footer{
     grid-row: 2;
@@ -77,3 +78,12 @@ body{
     }
 }
 
+@media  screen and (max-width: 351px){
+    .page{
+        display: none;
+    }
+    .main-nav{
+        grid-column: 1 / span 2;
+        width: 100%;
+    }
+}
