@@ -7,7 +7,8 @@ SaSS
 
 
 ### to do
-update favicon
-single scroll bar (seems to only occure on desktop. test further)
-visitor analytics
-header $ seo bits
+* update favicon
+* single scroll bar (seems to only occure on desktop. test further)
+* visitor analytics
+* header & seo bits
+* css from template to external

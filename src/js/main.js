@@ -1,4 +1,4 @@
-const modal = document.querySelector(".modal");
+/* const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".artwork-navlink");
 const closeButton = document.querySelector(".close-btn");
 
@@ -14,4 +14,4 @@ function windowOnClick(event) {
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+window.addEventListener("click", windowOnClick); */
