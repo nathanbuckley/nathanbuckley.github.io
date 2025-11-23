@@ -4,3 +4,10 @@
 
 Librarys used: 
 SaSS
+
+
+### to do
+update favicon
+single scroll bar
+visitor analytics
+header $ seo bits
